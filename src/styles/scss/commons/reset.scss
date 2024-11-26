@@ -1,0 +1,16 @@
+* {
+  border: 0;
+  margin: 0;
+}
+
+/* 
+    [Dart Sass 정리]
+    터미널 명령어(설치) : npm install sass --save-dev
+        - --save-dev 이유? : devDependencies 속성을 배포단계에서 제외하여, 용량을 축소하고 렌더링 속도를 최적화하는데에 기여함
+    컴파일 명령어 양식 : sass <입력 디렉토리>:<출력 디렉토리> [옵션]
+    컴파일 명령어 예시 : sass src/styles/scss:src/styles/css --style expanded --watch
+    ▶ 동작 순서
+        1. 입력디렉토리 스캔
+            - 모든 scss 파일과 하위폴더를 검색
+            - scss 파일의 상대 경로를 기준으로, 출력 디렉토리에 동일한 폴더 구조와 파일 생성
+*/

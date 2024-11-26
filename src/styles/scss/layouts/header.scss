@@ -1,0 +1,9 @@
+@use '../commons/variables.scss' as vars;
+
+.header-bg {
+  background: lime;
+  color: vars.$primary-color;
+  li {
+    @include vars.li-styles(vars.$primary-color, vars.$secondary-color);
+  }
+}

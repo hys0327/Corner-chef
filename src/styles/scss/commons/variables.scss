@@ -1,0 +1,9 @@
+// 색상 변수
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+// li 공통
+@mixin li-styles($fontColor, $bgColor) {
+  color: $fontColor;
+  background-color: $bgColor;
+}
