@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/corner-chef/static/css/main.6e59779d.css",
+    "main.js": "/corner-chef/static/js/main.d2b97b61.js",
+    "index.html": "/corner-chef/index.html",
+    "main.6e59779d.css.map": "/corner-chef/static/css/main.6e59779d.css.map",
+    "main.d2b97b61.js.map": "/corner-chef/static/js/main.d2b97b61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e59779d.css",
+    "static/js/main.d2b97b61.js"
+  ]
+}
