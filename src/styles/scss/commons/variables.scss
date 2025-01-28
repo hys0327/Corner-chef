@@ -1,6 +1,15 @@
 // 색상 변수
 $primary-color: #3498db;
 $secondary-color: #2ecc71;
+// slider
+$slider-item-bg: #454b87;
+$slider-left-color: #fff;
+
+// 이미지
+// css 파일 기준으로 상대경로 설정
+$bg-properties: no-repeat center / cover;
+$chef-img001: url('../images/img_chef001.png');
+$chef-img002: url('../images/img_chef002.png');
 
 // li 공통
 @mixin li-styles($fontColor, $bgColor) {

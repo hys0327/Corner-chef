@@ -1,9 +1,77 @@
 @use '../commons/variables.scss' as vars;
 
 .header-bg {
-  background: lime;
-  color: vars.$primary-color;
-  li {
-    @include vars.li-styles(vars.$primary-color, vars.$secondary-color);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+  filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.1));
+  header {
+    padding: 20px 24px;
+    &.desktop-header {
+      display: flex;
+      align-items: center;
+      h1 {
+        a {
+          background: red;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // WCAG 기준, 44px x 44px 이상을 마련해야 함
+          padding: 6px 0;
+          .img_logo {
+            width: 120px;
+            height: 32px;
+            background: #ddd;
+          }
+        }
+      }
+      nav {
+        margin-left: 156px;
+        ul {
+          display: flex;
+          align-items: center;
+          li {
+            display: flex; // 자식요소의 크기 반영하기 위한 설정
+            margin-right: 20px;
+            &:last-child {
+              margin-right: 0;
+            }
+            a {
+              padding: 13px 60px;
+            }
+          }
+        }
+      }
+      .button-wrap {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+          margin-right: 20px;
+          &:last-child {
+            margin-right: 0;
+          }
+          span {
+            &.icon {
+              width: 24px;
+              height: 24px;
+              background: #ddd;
+            }
+          }
+        }
+      }
+    }
+    &.mobile-header {
+    }
   }
+  // li {
+  //   @include vars.li-styles(vars.$primary-color, vars.$secondary-color);
+  // }
 }
